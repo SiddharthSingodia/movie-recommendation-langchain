@@ -35,29 +35,29 @@ def get_recommendations():
     results = recommend(movie)
     return jsonify({"recommendations": results})
 
-@app.route("/api/users/upsert", methods=["POST"])
-def upsert_user():
-    data = request.json
-    clerk_id = data.get("id")
-    email = data.get("email")
-    name = data.get("name")
+# @app.route("/api/users/upsert", methods=["POST"])
+# def upsert_user():
+#     data = request.json
+#     clerk_id = data.get("id")
+#     email = data.get("email")
+#     name = data.get("name")
 
-    print("Received:", data)
-    return jsonify({"message": "User upserted successfully!"})
+#     print("Received:", data)
+#     return jsonify({"message": "User upserted successfully!"})
 
-    if not clerk_id:
-        return jsonify({"error": "Missing user id"}), 400
+#     if not clerk_id:
+#         return jsonify({"error": "Missing user id"}), 400
 
-    res = supabase.table("users").upsert({
-        "id": clerk_id,
-        "email": email,
-        "name": name
-    }).execute()
+#     res = supabase.table("users").upsert({
+#         "id": clerk_id,
+#         "email": email,
+#         "name": name
+#     }).execute()
 
-    if res.error:
-        return jsonify({"error": res.error.message}), 400
+#     if res.error:
+#         return jsonify({"error": res.error.message}), 400
 
-    return jsonify({"success": True, "data": res.data})
+#     return jsonify({"success": True, "data": res.data})
 
 @app.route('/movie/<int:movie_id>')
 def get_movie(movie_id):
