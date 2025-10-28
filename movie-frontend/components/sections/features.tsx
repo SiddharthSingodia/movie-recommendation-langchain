@@ -1,11 +1,11 @@
-import { CheckCircle, Heart, Brain, Star } from 'lucide-react';
+import { CheckCircle, Heart, Brain, Sparkles } from 'lucide-react';
 import React from 'react';
 
 const featuresData = [
   {
     icon: Brain,
     title: "AI-Powered Recommendations",
-    description: "Get personalized movie suggestions based on your viewing history and preferences using advanced machine learning.",
+   description: "Get intelligent movie recommendations powered by advanced machine learning that analyzes your viewing patterns, genres you enjoy, and watch history to curate a truly personalized list.",
   },
   {
     icon: Heart,
@@ -13,9 +13,9 @@ const featuresData = [
     description: "Save movies you want to watch and organize your viewing queue with our intuitive watchlist feature.",
   },
   {
-    icon: Star,
-    title: "Rate & Review",
-    description: "Rate movies you've watched and help improve recommendations for yourself and other movie lovers.",
+    icon: Sparkles,
+    title: "Mood-Based AI Suggestions",
+       description: "Let your emotions guide your movie night — choose your current mood, and our AI dynamically selects films that perfectly match how you feel.",
   },
   {
     icon: CheckCircle,

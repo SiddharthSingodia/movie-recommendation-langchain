@@ -23,12 +23,12 @@
 import Navigation from "@/components/sections/navigation";
 import HeroSection from "@/components/sections/hero";
 import FeaturesSection from "@/components/sections/features";
-import TravelPackages from "@/components/sections/travel-packages";
-import TravelGuides from "@/components/sections/travel-guides";
+import FeaturedMovies from "@/components/sections/FeaturedMovies";
+
 import Testimonials from "@/components/sections/testimonials";
 import CommunityForum from "@/components/sections/community-forum";
-import Destinations from "@/components/sections/destinations";
-import MoodBoardCta from "@/components/sections/mood-board-cta";
+import NewMovies from "@/components/sections/NewMovies";
+
 import Footer from "@/components/sections/footer";
 
 export default function Home() {
@@ -40,17 +40,15 @@ export default function Home() {
         <HeroSection />
         
         <FeaturesSection />
-        
-        <TravelPackages />
-        
-       
-        
+
+        <FeaturedMovies />
+
         <Testimonials />
         
         <CommunityForum />
-        
-        <Destinations />
-        
+
+        <NewMovies />
+
         {/* <MoodBoardCta /> */}
       </main>
       

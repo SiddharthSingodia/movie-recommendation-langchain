@@ -16,33 +16,33 @@ import {
 } from "lucide-react";
 
 // Data for navigation links
-const bookingLinks = [
-  { href: "/ticket", label: "Ticket" },
-  { href: "/hotels", label: "Hotels" },
-  { href: "/packages", label: "Packages" },
-  { href: "/rentals", label: "Rentals" },
-  { href: "/visa-checker", label: "Visa" },
-  { href: "/booking-history", label: "Booking History" },
-];
+// const bookingLinks = [
+//   { href: "/ticket", label: "Ticket" },
+//   { href: "/hotels", label: "Hotels" },
+//   { href: "/packages", label: "Packages" },
+//   { href: "/rentals", label: "Rentals" },
+//   { href: "/visa-checker", label: "Visa" },
+//   { href: "/booking-history", label: "Booking History" },
+// ];
 
-const supportLinks = [
-  { href: "/travel-plan-generator", label: "Travel Plans" },
-  { href: "/custom-itinerary", label: "Custom Travel Itinerary" },
-  { href: "/guides", label: "Guide" },
-  { href: "/contact", label: "Contact" },
-];
+// const supportLinks = [
+//   { href: "/travel-plan-generator", label: "Travel Plans" },
+//   { href: "/custom-itinerary", label: "Custom Travel Itinerary" },
+//   { href: "/guides", label: "Guide" },
+//   { href: "/contact", label: "Contact" },
+// ];
 
-const toolsLinks = [
-  { href: "/packing-checklist", label: "Packing Checklist" },
-  { href: "/trip-calculator", label: "Trip Expense Calculator" },
-  { href: "/recommendation", label: "Travel Recommendations" },
-  { href: "/enhanced-currency", label: "Enhanced Currency Converter" },
-  { href: "/itinerary-map", label: "Map" },
-  { href: "/mood-board", label: "AI Mood Board" },
-  { href: "/ai-travel-planner", label: "AI Travel Planner" },
-  { href: "/music", label: "Music" },
-  { href: "/feedback", label: "Feedback" },
-];
+// const toolsLinks = [
+//   { href: "/packing-checklist", label: "Packing Checklist" },
+//   { href: "/trip-calculator", label: "Trip Expense Calculator" },
+//   { href: "/recommendation", label: "Travel Recommendations" },
+//   { href: "/enhanced-currency", label: "Enhanced Currency Converter" },
+//   { href: "/itinerary-map", label: "Map" },
+//   { href: "/mood-board", label: "AI Mood Board" },
+//   { href: "/ai-travel-planner", label: "AI Travel Planner" },
+//   { href: "/music", label: "Music" },
+//   { href: "/feedback", label: "Feedback" },
+// ];
 
 interface NavDropdownProps {
   label: string;
@@ -192,7 +192,7 @@ const Navigation = () => {
                 <div className="flex items-center justify-between px-3"><span className="text-sm font-medium text-gray-300">Mood Music</span><button className="flex items-center gap-2 px-3 py-2 backdrop-blur-sm border rounded-full transition-all duration-300 shadow-lg relative z-10 text-sm font-medium justify-center border-slate-700"><Music className="w-4 h-4 text-pink-400" /></button></div>
                 <div className="flex items-center justify-between px-3"><span className="text-sm font-medium text-gray-300">Language</span><button className="flex items-center gap-2 px-3 py-2 rounded-md transition-all duration-200 hover:bg-pink-500/20 text-gray-200 hover:text-white" aria-label="Select language"><Globe className="w-4 h-4 text-pink-500" /><span className="text-lg mr-1">🇺🇸</span><span className="text-sm font-medium">English</span><ChevronDown className="w-4 h-4" /></button></div>
             </div>
-            <div className="flex flex-col gap-4 flex-grow">
+            {/* <div className="flex flex-col gap-4 flex-grow">
                 <Link href="/" className="py-2 px-3 font-medium rounded hover:bg-pink-500 transition-all duration-200 break-words text-sm">Home</Link>
                 <Link href="/dashboard" className="py-2 px-3 font-medium rounded hover:bg-pink-500 transition-all duration-200 break-words text-sm">Dashboard</Link>
                 <Link href="/watchlist" className="py-2 px-3 font-medium rounded hover:bg-pink-500 transition-all duration-200 break-words text-sm">My Watchlist</Link>
@@ -200,7 +200,7 @@ const Navigation = () => {
                 <MobileCollapsible label="Support">{supportLinks.map(l => <Link key={l.href} href={l.href} className="py-1.5 px-3 text-sm rounded text-gray-300 hover:bg-pink-500/20 hover:text-white">{l.label}</Link>)}</MobileCollapsible>
                 <MobileCollapsible label="Tools">{toolsLinks.map(l => <Link key={l.href} href={l.href} className="py-1.5 px-3 text-sm rounded text-gray-300 hover:bg-pink-500/20 hover:text-white">{l.label}</Link>)}</MobileCollapsible>
                 <Link href="/wishlist" className="py-2 px-3 font-medium rounded hover:bg-pink-500 transition-all duration-200 break-words text-sm">Wishlist</Link>
-            </div>
+            </div> */}
             <div className="mt-6 flex flex-col gap-2">
                 <SignedOut>
                   <button onClick={() => { setShowSignIn(true); setIsMobileMenuOpen(false); }} className="flex gap-2 items-center justify-center py-2 px-3 rounded font-medium hover:bg-pink-500 hover:text-white transition-all text-sm border border-pink-500 text-pink-500"><LogIn className="w-4 h-4" /> Login</button>
